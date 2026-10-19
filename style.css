@@ -109,6 +109,7 @@ main {
 
 .card {
     min-height: 210px;
+    height: 210px;
     border-radius: 22px;
     overflow: hidden;
     background-color: white;
@@ -120,6 +121,10 @@ main {
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px #0000001A;
+}
+
+.oculta {
+    display: none;
 }
 
 /* Frente de la tarjeta */
