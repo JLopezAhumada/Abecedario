@@ -108,6 +108,7 @@ main {
 /* ===== TARJETAS ===== */
 
 .card {
+    position: relative;
     min-height: 210px;
     height: 210px;
     border-radius: 22px;
@@ -115,6 +116,7 @@ main {
     background-color: white;
     box-shadow: 0 4px 10px #00000012;
     cursor: pointer;
+    perspective: 1000px;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -130,11 +132,15 @@ main {
 /* Frente de la tarjeta */
 
 .card-frente {
-    min-height: 210px;
+    position: absolute;
+    inset: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #CDEAC0;
+    backface-visibility: hidden;
+    transform: rotateY(0deg);
+    transition: transform 0.6s ease;
 }
 
 .card-frente h2 {
@@ -145,8 +151,22 @@ main {
 /* Dorso de la tarjeta */
 
 .card-dorso {
+    position: absolute;
+    inset: 0;
     text-align: center;
+    background-color: white;
     padding-bottom: 15px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    transition: transform 0.6s ease;
+}
+
+.card.volteada .card-frente {
+    transform: rotateY(180deg);
+}
+
+.card.volteada .card-dorso {
+    transform: rotateY(360deg);
 }
 
 .card-dorso img {
