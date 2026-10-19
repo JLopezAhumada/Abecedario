@@ -1,5 +1,5 @@
 ## Grupo 6
-### Leidy Gonzáles
+### Leidy Johanna González García
 ### Juan Andrés Bohórquez
 ### Jesús David López Ahumada
 ### Luisa Fernanda Sánchez
