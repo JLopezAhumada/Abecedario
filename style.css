@@ -1,0 +1,190 @@
+
+/* ===== CONFIGURACIÓN GENERAL ===== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background-color: #FFF9ED;
+    color: #39445A;
+}
+
+/* ===== BARRA DE NAVEGACIÓN ===== */
+
+.navbar {
+    background-color: #A8DADC;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    box-shadow: 0 3px 8px #00000010;
+}
+
+.navbar h1 {
+    color: #315C70;
+    font-size: 2rem;
+}
+
+.navbar p {
+    background-color: white;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* ===== CONTENIDO PRINCIPAL ===== */
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ===== PRESENTACIÓN ===== */
+
+.presentacion {
+    text-align: center;
+    padding: 45px 15px 25px;
+}
+
+.presentacion h2 {
+    color: #E58B56;
+    font-size: 2.3rem;
+    margin-bottom: 12px;
+}
+
+.presentacion p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* ===== FILTROS ===== */
+
+.filtros {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 15px 0 30px;
+    flex-wrap: wrap;
+}
+
+.filtros button {
+    background-color: #F6BD60;
+    color: #39445A;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.filtros button:hover {
+    background-color: #F3A847;
+    transform: translateY(-2px);
+}
+
+.filtros button:focus-visible {
+    outline: 3px solid #315C70;
+    outline-offset: 3px;
+}
+
+/* ===== GALERÍA DE LETRAS ===== */
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 22px;
+    padding: 10px 0 45px;
+}
+
+/* ===== TARJETAS ===== */
+
+.card {
+    min-height: 210px;
+    border-radius: 22px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 4px 10px #00000012;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px #0000001A;
+}
+
+/* Frente de la tarjeta */
+
+.card-frente {
+    min-height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #CDEAC0;
+}
+
+.card-frente h2 {
+    font-size: 5rem;
+    color: #315C45;
+}
+
+/* Dorso de la tarjeta */
+
+.card-dorso {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.card-dorso img {
+    display: block;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-dorso p {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 12px 8px 0;
+    color: #39445A;
+}
+
+/* ===== EQUIPO DE DESARROLLO ===== */
+
+.equipo {
+    background-color: #FADADD;
+    padding: 30px;
+    margin: 20px 0 40px;
+    border-radius: 22px;
+}
+
+.equipo h2 {
+    color: #934F62;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.equipo ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.equipo li {
+    background-color: white;
+    padding: 12px 18px;
+    border-radius: 18px;
+    text-align: center;
+}
